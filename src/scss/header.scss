@@ -1,4 +1,167 @@
 //====================================================================================================
+.header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  padding: 20px 0;
+  // .header__container
+
+  &__container {
+  }
+
+  // .header__body
+
+  &__body {
+    display: flex;
+    align-items: center;
+  }
+
+  // .header__logo
+
+  &__logo {
+    max-width: 250px;
+    margin: 0 70px 0 0;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  // .header__menu
+
+  &__menu {
+  }
+
+  // .header__socials
+
+  &__socials {
+    color: $colorGray;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px 0 0;
+  }
+
+  // .header__socials-item
+
+  &__socials-item {
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  // .header__socials-vk
+
+  &__socials-vk {
+    &::before {
+      content: "";
+      background: url("@img/icons/vk.svg") center center no-repeat;
+      width: 24px;
+      height: 24px;
+      margin: 0 10px 0 0;
+    }
+  }
+
+  // .header__socials-tg
+
+  &__socials-tg {
+    &::before {
+      content: "";
+      background: url("@img/icons/tg.svg") center center no-repeat;
+      width: 20px;
+      height: 17px;
+      margin: 0 10px 0 0;
+    }
+  }
+
+  // .header__contacts
+
+  &__contacts {
+  }
+
+  // .header__contacts-numbers
+
+  &__contacts-numbers {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    gap: 8px 6px;
+    width: max-content;
+    margin: 0 0 8px 0;
+  }
+
+  // .header__contacts-wh
+
+  &__contacts-wh {
+    width: 24px;
+    height: 24px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  // .header__contacts-tel
+
+  &__contacts-tel {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  // .header__contacts-call
+
+  &__contacts-call {
+    color: $colorPink;
+    font-size: 13px;
+    text-decoration: underline;
+    margin: 0 0 4px 0;
+  }
+
+  // .header__contacts-text
+
+  &__contacts-text {
+    color: $colorGray;
+    font-size: 13px;
+    opacity: 0.8;
+  }
+}
+.menu {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto 0 0;
+
+  // .menu__body
+
+  &__body {
+  }
+
+  // .menu__list
+
+  &__list {
+    display: flex;
+  }
+
+  // .menu__item
+
+  &__item {
+    & > a {
+      padding: 10px 25px;
+      white-space: nowrap;
+    }
+
+    & > ul {
+      display: none;
+    }
+  }
+}
 
 //====================================================================================================
 
