@@ -1,15 +1,18 @@
 // Заголовки, общие БЄМ блоки и проче...
 h1 {
+  font-family: $fontFamilySecond;
   font-size: 60px;
   font-weight: 600;
   text-transform: uppercase;
 }
 h2 {
+  font-family: $fontFamilySecond;
   font-size: 38px;
   font-weight: 600;
   text-transform: uppercase;
 }
 h3 {
+  font-family: $fontFamilySecond;
   font-size: 28px;
   line-height: 1.25;
 }
