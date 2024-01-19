@@ -90,7 +90,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  //   overflow: hidden;
+    // overflow: hidden;
   // Прижимаем footer
   > main {
     flex: 1 1 auto;
@@ -163,3 +163,4 @@ body {
 
 // Подключение стилей отдельных секций
 @import "sections/main";
+@import "sections/directions";
