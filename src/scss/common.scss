@@ -1,38 +1,44 @@
 // Заголовки, общие БЄМ блоки и проче...
 h1 {
-  font-family: $fontFamilySecond;
-  font-size: 60px;
-  font-weight: 600;
-  text-transform: uppercase;
+	font-family: $fontFamilySecond;
+	font-size: 60px;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 h2 {
-  font-family: $fontFamilySecond;
-  font-size: 38px;
-  font-weight: 600;
-  text-transform: uppercase;
+	font-family: $fontFamilySecond;
+	font-size: 38px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
 }
 h3 {
-  font-family: $fontFamilySecond;
-  font-size: 28px;
-  line-height: 1.25;
+	font-family: $fontFamilySecond;
+	font-size: 28px;
+	line-height: 1.25;
 }
 @media (hover: hover) and (min-width: $tablet) {
-  a,
-  button {
-    transition: 0.2s ease;
-  }
+	a,
+	button {
+		transition: 0.2s ease;
+	}
 
-  .menu__item > a,
-  .header__socials-item,
-  .header__contacts-tel {
-    &:hover {
-      color: $colorPink;
-    }
-  }
+	.menu__item > a,
+	.header__socials-item,
+	.header__contacts-tel {
+		&:hover {
+			color: $colorPink;
+		}
+	}
 
-  .header__contacts-call {
-    &:hover {
-      text-decoration: none;
-    }
-  }
+	.header__contacts-call {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+.desc {
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
 }
