@@ -1,0 +1,305 @@
+.benefits {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -80px;
+    left: 0;
+    width: 100%;
+    height: 229px;
+    background: url("@img/directions/directions_bg.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: rotate(180deg);
+  }
+
+  // .benefits__container
+
+  &__container {
+  }
+
+  // .benefits__title
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    & span {
+      background: var(
+        --gradient,
+        linear-gradient(90deg, #b700c7 0%, #de3e63 46%, #ff9440 100%)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  // .benefits__body
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .benefits__items
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .benefits__items-top
+
+  &__items-top {
+    & .benefits__item {
+      &:nth-child(1) {
+        &::before {
+          content: "";
+          background: url("@img/benefits/benefits_1.svg") center center
+            no-repeat;
+          background-size: contain;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 50px;
+          height: 50px;
+        }
+      }
+      &:nth-child(2) {
+        &::before {
+          content: "";
+          background: url("@img/benefits/benefits_2.svg") center center
+            no-repeat;
+          background-size: contain;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  // .benefits__items-bottom
+
+  &__items-bottom {
+    & .benefits__item {
+      &:nth-child(1) {
+        &::before {
+          content: "";
+          background: url("@img/benefits/benefits_3.svg") center center
+            no-repeat;
+          background-size: contain;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 50px;
+          height: 50px;
+        }
+      }
+      &:nth-child(2) {
+        &::before {
+          content: "";
+          background: url("@img/benefits/benefits_4.svg") center center
+            no-repeat;
+          background-size: contain;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+  // .benefits__items-center
+
+  &__items-center {
+    position: relative;
+    display: unset;
+    justify-content: unset;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      background: url("@img/benefits/benefits_bg.svg") center center no-repeat;
+      background-size: contain;
+      position: absolute;
+      bottom: 70px;
+      left: -10px;
+      width: calc(100% + 20px);
+      height: 100%;
+    }
+  }
+  // .benefits__item
+
+  &__item {
+    position: relative;
+    max-width: calc(680px + 80px);
+    padding: 0 0 0 80px;
+
+    &:nth-child(2) {
+      &::before {
+        background: url("@img/benefits/benefits_2.svg") center center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    // .benefits__item_horizontal
+
+    &_horizontal {
+      font-family: $fontFamilySecond;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.2;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      height: 370px;
+      margin: 20px 0;
+      padding: unset;
+    }
+
+    &:nth-child(4) {
+      &::before {
+        background: url("@img/benefits/benefits_3.svg") center center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &:nth-child(5) {
+      &::before {
+        background: url("@img/benefits/benefits_4.svg") center center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  // .benefits__item-heading
+
+  &__item-heading {
+    margin-bottom: 10px;
+  }
+
+  // .benefits__item-content
+
+  &__item-content {
+    color: $colorGray;
+    line-height: 1.7;
+  }
+
+  // .benefits__item-elem
+
+  &__item-elem {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.83);
+    backdrop-filter: blur(1.5px);
+    padding: 10px;
+
+    &:nth-child(1) {
+      z-index: 3;
+      bottom: 15px;
+      left: 55px;
+      width: 210px;
+      height: 210px;
+      border: 10px solid #c7a7d9;
+    }
+
+    &:nth-child(2) {
+      z-index: 2;
+      bottom: 55px;
+      left: 236px;
+      width: 270px;
+      height: 270px;
+      border: 10px solid #ff9440;
+    }
+
+    &:nth-child(3) {
+      z-index: 1;
+      bottom: 0;
+      left: 460px;
+      width: 180px;
+      height: 180px;
+      border: 10px solid #b14f78;
+    }
+
+    &:nth-child(4) {
+      z-index: 3;
+      top: 0;
+      left: 580px;
+      width: 290px;
+      height: 290px;
+      border: 10px solid #b802c4;
+    }
+
+    &:nth-child(5) {
+      z-index: 2;
+      bottom: 30px;
+      left: 840px;
+      width: 240px;
+      height: 240px;
+      border: 10px solid #72cc80;
+    }
+
+    &:nth-child(6) {
+      z-index: 1;
+      bottom: 70px;
+      left: 1055px;
+      width: 270px;
+      height: 270px;
+      border: 10px solid #88d9e8;
+    }
+
+    &:nth-child(7) {
+      z-index: 2;
+      bottom: 0;
+      left: 1290px;
+      width: 240px;
+      height: 240px;
+      border: 10px solid #ffda83;
+    }
+  }
+
+  // .benefits__buttons
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0 0;
+  }
+
+  // .benefits__button
+
+  &__button {
+  }
+  // .benefits__slogan
+  &__slogan {
+    font-family: $fontFamilySecond;
+    font-size: 29px;
+    font-weight: 500;
+    text-align: center;
+    background: var(
+      --gradient,
+      linear-gradient(90deg, #b700c7 0%, #de3e63 46%, #ff9440 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 30px 0 0 0;
+  }
+}

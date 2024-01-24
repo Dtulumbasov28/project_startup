@@ -189,20 +189,3 @@
     }
   }
 }
-.button {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  white-space: nowrap;
-  width: fit-content;
-  padding: 18px 30px;
-  border-radius: 50px;
-  margin: 0 30px 0 0;
-
-  // .button__gradient
-
-  &__gradient {
-    color: #fff;
-    background: linear-gradient(90deg, #b700c7 0%, #de3e63 46%, #ff9440 100%);
-  }
-}
