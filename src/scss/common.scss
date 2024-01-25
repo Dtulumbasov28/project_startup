@@ -1,4 +1,10 @@
 // Заголовки, общие БЄМ блоки и проче...
+main {
+  background: url("@img/icons/backgraund.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  // filter: brightness(0.5);
+}
 h1 {
   font-family: $fontFamilySecond;
   font-size: 60px;
@@ -43,7 +49,7 @@ h3 {
 }
 .desc {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: center;
 }
 .button {
@@ -70,4 +76,7 @@ h3 {
     color: $colorPink;
     border: 1px solid$colorPink;
   }
+}
+section {
+  padding: 60px 0;
 }
