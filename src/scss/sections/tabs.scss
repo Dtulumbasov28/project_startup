@@ -108,7 +108,10 @@
     background-clip: padding-box;
     border: solid 3px transparent;
     border-radius: 30px;
-
+    & ul,
+    ol {
+      margin: 10px 0;
+    }
     & ul > li {
       position: relative;
       padding-left: 12px;

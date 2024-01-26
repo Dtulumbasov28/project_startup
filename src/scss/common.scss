@@ -10,7 +10,6 @@ h1 {
   font-size: 60px;
   font-weight: 600;
   line-height: normal;
-
   text-transform: uppercase;
 }
 h2 {
@@ -18,9 +17,10 @@ h2 {
   font-size: 38px;
   font-weight: 600;
   line-height: normal;
-
   text-transform: uppercase;
   text-align: center;
+  
+  margin-bottom: 15px;
 }
 h3 {
   font-family: $fontFamilySecond;
@@ -49,6 +49,7 @@ h3 {
 }
 .desc {
   font-size: 16px;
+  color: $colorGray;
   line-height: 1.6;
   text-align: center;
 }

@@ -29,14 +29,14 @@ function initSliders() {
 	// Проверяем, есть ли слайдер на стронице
 	if (document.querySelector('.swiper')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.swiper', { // Указываем скласс нужного слайдера
+		new Swiper('.staff__slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Navigation],
 			observer: true,
 			observeParents: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
+			slidesPerView: 3,
+			spaceBetween: 20,
 			autoHeight: true,
 			speed: 800,
 
@@ -73,8 +73,8 @@ function initSliders() {
 
 			// Кнопки "влево/вправо"
 			navigation: {
-				prevEl: '.swiper-button-prev',
-				nextEl: '.swiper-button-next',
+				prevEl: '.staff__slider-prev',
+				nextEl: '.staff__slider-next',
 			},
 
 			// Брейкпоинты
