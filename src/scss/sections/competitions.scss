@@ -1,0 +1,59 @@
+.competitions {
+  position: relative;
+  padding: 35px 0 105px 0;
+  &::before {
+    content: "";
+    background: url("@img/icons/decor.svg") center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+  }
+  // .competitions__container
+
+  &__container {
+  }
+
+  // .competitions__body
+
+  &__body {
+    display: flex;
+    align-items: center;
+  }
+
+  // .competitions__title
+
+  &__title {
+    font-family: $fontFamilySecond;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-transform: uppercase;
+    text-align: right;
+    max-width: 380px;
+    width: 100%;
+  }
+
+  // .competitions__text
+
+  &__text {
+    color: $colorGray;
+    line-height: 1.7;
+    display: flex;
+    width: 100%;
+
+    &::before {
+      content: "";
+      background: url("@img/icons/competitions.svg") center center no-repeat;
+      background-size: contain;
+      width: 100px;
+      height: 100px;
+      flex-shrink: 0;
+      margin: 0 60px;
+    }
+  }
+}

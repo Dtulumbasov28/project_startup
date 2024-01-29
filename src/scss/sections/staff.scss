@@ -1,119 +1,124 @@
 .staff {
-	// .staff__container
+  padding: 60px 0 35px 0;
+  // .staff__container
 
-	&__container {
-	}
+  &__container {
+  }
 
-	// .staff__title
+  // .staff__title
 
-	&__title {
-	}
+  &__title {
+  }
 
-	// .staff__desc
+  // .staff__desc
 
-	&__desc {
-	}
+  &__desc {
+  }
 
-	// .staff__slider
+  // .staff__body
 
-	&__slider {
-		position: relative;
-		margin: 50px 0;
-	}
-	
-	// .staff__slider-wrapper
-	
-	&__slider-wrapper {margin: 0 34px;
-	}
+  &__body {
+    position: relative;
+  }
+  // .staff__slider
 
-	// .staff__item
+  &__slider {
+    margin: 50px 34px;
+  }
 
-	&__item {
-		display: flex;
-		align-items: center;
-	}
+  // .staff__slider-wrapper
 
-	// .staff__item-img
+  &__slider-wrapper {
+  }
 
-	&__item-img {
-		width: 200px;
-		height: 200px;
-		border-radius: 50%;
-		overflow: hidden;
-		margin: 0 15px 0 0;
-		flex-shrink: 0;
+  // .staff__item
 
-		& img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-	}
+  &__item {
+    display: flex;
+    align-items: center;
+  }
 
-	// .staff__item-text
+  // .staff__item-img
 
-	&__item-text {
-	}
+  &__item-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 15px 0 0;
+    flex-shrink: 0;
 
-	// .staff__item-name
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
-	&__item-name {
-		position: relative;
-		font-size: 18px;
-		font-weight: 500;
-		line-height: 1.25;
-		max-width: 280px;
+  // .staff__item-text
 
-		&::after {
-			content: "";
-			background: url("@img/icons/staff-decor.svg") center center no-repeat;
-			background-size: contain;
-			display: block;
-			width: 50px;
-			height: 18px;
-			margin: 15px 0;
-		}
-	}
+  &__item-text {
+  }
 
-	// .staff__item-job
+  // .staff__item-name
 
-	&__item-job {
-		font-size: 14px;
-		line-height: 1.5;
-		color: $colorGray;
-	}
+  &__item-name {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.25;
+    max-width: 280px;
 
-	// .staff__slider-navigation
+    &::after {
+      content: "";
+      background: url("@img/icons/staff-decor.svg") center center no-repeat;
+      background-size: contain;
+      display: block;
+      width: 50px;
+      height: 18px;
+      margin: 15px 0;
+    }
+  }
 
-	&__slider-navigation {
-	}
+  // .staff__item-job
 
-	// .staff__slider-prev
+  &__item-job {
+    font-size: 14px;
+    line-height: 1.5;
+    color: $colorGray;
+  }
 
-	&__slider-prev {
-		}
-	
-	// .staff__slider-next
-	
-	&__slider-next {
-	}
+  // .staff__slider-navigation
 
-	// .staff__slogan
+  &__slider-navigation {
+  }
 
-	&__slogan {
-		font-family: $fontFamilySecond;
-		font-size: 29px;
-		font-weight: 500;
-		line-height: 1.4;
-		text-transform: uppercase;
-		text-align: center;
-		background: linear-gradient(90deg, #b700c7 0%, #de3e63 46%, #ff9440 100%);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		max-width: 780px;
-		margin: 0 auto;
-	}
+  // .staff__slider-prev
+
+  &__slider-prev {
+  }
+
+  // .staff__slider-next
+
+  &__slider-next {
+  }
+
+  // .staff__slogan
+
+  &__slogan {
+    font-family: $fontFamilySecond;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(90deg, #b700c7 0%, #de3e63 46%, #ff9440 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 780px;
+    margin: 0 auto;
+  }
 }
 .desc {
 }
@@ -124,19 +129,19 @@
 .swiper-slide {
 }
 .swiper-button {
-	background: url("@img/icons/slider-arrow.svg") center center no-repeat;
-	position: absolute;
-	top: 50%;
-	width: 14px;
-	height: 26px;
+  background: url("@img/icons/slider-arrow.svg") center center no-repeat;
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 26px;
 }
 .swiper-navigation {
 }
 .swiper-button-prev {
-	left: 0;
-	transform: translateY(-50%) rotate(180deg);
+  left: 0;
+  transform: translateY(-50%) rotate(180deg);
 }
 .swiper-button-next {
-	right: 0;
-	transform: translateY(-50%);
+  right: 0;
+  transform: translateY(-50%);
 }

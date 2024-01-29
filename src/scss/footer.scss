@@ -1,3 +1,181 @@
 //====================================================================================================
+.footer {
+  padding: 40px 0;
+  // .footer__container
+
+  &__container {
+  }
+
+  // .footer__body
+
+  &__body {
+    display: flex;
+  }
+
+  // .footer__logo
+
+  &__logo {
+  }
+
+  // .footer__logo-wrapper
+
+  &__logo-wrapper {
+  }
+
+  // .footer__logo-link
+
+  &__logo-link {
+    display: flex;
+    width: 250px;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  // .footer__content
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 0 70px;
+  }
+
+  // .footer__top
+
+  &__top {
+    margin: 0 0 40px 0;
+  }
+
+  // .footer__menu
+
+  &__menu {
+  }
+
+  // .footer__menu-item
+
+  &__menu-item {
+  }
+
+  // .footer__bottom
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & > div:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  // .footer__address
+
+  &__address {
+  }
+
+  // .footer__address-name
+
+  &__address-name {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  // .footer__address-content
+
+  &__address-content {
+  }
+
+  // .footer__contacts
+
+  &__contacts {
+  }
+
+  // .footer__contacts-numbers
+
+  &__contacts-numbers {
+  }
+
+  // .footer__contacts-wh
+
+  &__contacts-wh {
+  }
+
+  // .footer__contacts-tel
+
+  &__contacts-tel {
+  }
+
+  // .footer__contacts-call
+
+  &__contacts-call {
+  }
+
+  // .footer__contacts-text
+
+  &__contacts-text {
+  }
+
+  // .footer__socials
+
+  &__socials {
+  }
+
+  // .footer__button
+
+  &__button {
+  }
+}
+.block-contacts {
+  // .block-contacts__numbers
+
+  &__numbers {
+  }
+
+  // .block-contacts__numbers-wh
+
+  &__numbers-wh {
+  }
+
+  // .block-contacts__numbers-tel
+
+  &__numbers-tel {
+  }
+
+  // .block-contacts__call
+
+  &__call {
+  }
+
+  // .block-contacts__text
+
+  &__text {
+  }
+}
+.socials {
+  // .socials__item
+
+  &__item {
+  }
+
+  // .socials__item-vk
+
+  &__item-vk {
+  }
+
+  // .socials__item-tg
+
+  &__item-tg {
+  }
+}
+.button {
+  // .button__gradient
+
+  &__gradient {
+  }
+}
 
 //====================================================================================================

@@ -1,0 +1,91 @@
+.front-form {
+  padding: 35px 0;
+  // .front-form__container
+
+  &__container {
+  }
+
+  // .front-form__body
+
+  &__body {
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    padding: 40px 50px;
+    border-radius: 50px;
+  }
+
+  // .front-form__text
+
+  &__text {
+    max-width: 460px;
+    margin: 0 20px 0 0;
+  }
+
+  // .front-form__title
+
+  &__title {
+    font-family: $fontFamilySecond;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  // .front-form__desc
+
+  &__desc {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  // .front-form__content
+
+  &__content {
+    display: flex;
+    width: 100%;
+  }
+
+  // .front-form__input-group
+
+  &__input-group {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin: 0 20px 0 0;
+    }
+  }
+
+  // .front-form__input
+
+  &__input {
+    width: 100%;
+  }
+
+  // .front-form__input-name
+
+  &__input-name {
+  }
+
+  // .front-form__input-tel
+
+  &__input-tel {
+  }
+
+  // .front-form__submit
+
+  &__submit {
+  }
+}
+form input {
+  font-size: 15px;
+  line-height: normal;
+  padding: 20px 30px;
+  border-radius: 30px;
+  border: 1px solid #d0d0d0;
+  background: #fff;
+}
+form input[type="submit"] {
+  cursor: pointer;
+  font-weight: 600;
+}
