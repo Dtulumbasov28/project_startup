@@ -7,7 +7,6 @@
 }
 h1 {
   font-family: $fontFamilySecond;
-  font-size: 60px;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
@@ -76,14 +75,28 @@ section {
   flex-direction: column;
   margin: 0 70px 0 0;
 
+  @media (max-width: $laptop) {
+    margin: 0 10px auto 0;
+  }
+
   // .socials__item
 
   &__item {
     display: flex;
     align-items: center;
 
+    @media (max-width: $laptop) {
+      & span {
+        display: none;
+      }
+    }
+
     &:first-child {
       margin: 0 0 10px 0;
+
+      @media (max-width: $laptop) {
+        margin: 0 0 15px 0;
+      }
     }
   }
 
@@ -93,9 +106,15 @@ section {
     &::before {
       content: "";
       background: url("@img/icons/vk.svg") center center no-repeat;
-      width: 24px;
-      height: 24px;
+      background-size: contain;
+      width: 23px;
+      height: 14px;
       margin: 0 10px 0 0;
+
+      @media (max-width: $laptop) {
+        width: 30px;
+        height: 20px;
+      }
     }
   }
 
@@ -105,9 +124,15 @@ section {
     &::before {
       content: "";
       background: url("@img/icons/tg.svg") center center no-repeat;
+      background-size: contain;
       width: 20px;
       height: 17px;
       margin: 0 10px 0 0;
+
+      @media (max-width: $laptop) {
+        width: 26px;
+        height: 23px;
+      }
     }
   }
 }
@@ -146,6 +171,8 @@ section {
 }
 
 .block-contacts {
+
+
   // .block-contacts__numbers
 
   &__numbers {
@@ -155,6 +182,14 @@ section {
     gap: 8px 6px;
     width: max-content;
     margin: 0 0 8px 0;
+
+    @media (max-width: $tablet) {
+      margin: 0 50px 0 0;
+    }
+
+    @media (max-width: $mobileBig) {
+      margin: 0 20px 0 0;
+    }
   }
 
   // .block-contacts__numbers-wh
@@ -162,6 +197,11 @@ section {
   &__numbers-wh {
     width: 24px;
     height: 24px;
+
+    @media (max-width: $mobile) {
+      width: 18px;
+      height: 18px;
+    }
 
     & img {
       width: 100%;
@@ -175,6 +215,14 @@ section {
   &__numbers-tel {
     font-size: 18px;
     font-weight: 600;
+
+    @media (max-width: $laptop) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+    }
   }
 
   // .block-contacts__call
@@ -182,8 +230,13 @@ section {
   &__call {
     color: $colorPink;
     font-size: 13px;
+    text-align: left;
     text-decoration: underline;
     margin: 0 0 4px 0;
+
+    @media (max-width: $laptop) {
+      font-size: 12px;
+    }
   }
 
   // .block-contacts__text
@@ -192,9 +245,110 @@ section {
     color: $colorGray;
     font-size: 13px;
     opacity: 0.8;
+
+    @media (max-width: $laptop) {
+      font-size: 12px;
+    }
   }
 }
 
+.menu {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto 0 0;
+
+  @media (max-width: $laptop) {
+    font-size: 13px;
+  }
+
+  // .menu__body
+
+  &__body {
+  }
+
+  // .menu__list
+
+  &__list {
+    display: flex;
+  }
+
+  // .menu__item
+
+  &__item {
+    & > a {
+      padding: 10px 25px;
+      white-space: nowrap;
+
+      @media (max-width: $laptop) {
+        padding: 10px 15px;
+      }
+    }
+
+    & > ul {
+      display: none;
+    }
+  }
+}
+.burger-menu {
+  .menu {
+    // .menu__body
+
+    &__body {
+      position: absolute;
+      z-index: 2000;
+      top: 0;
+      left: -100vw;
+      background-color: #fff;
+      width: 300px;
+      padding: 20px;
+    }
+
+    // .menu__list
+
+    &__list {
+      flex-direction: column;
+    }
+
+    // .menu__item
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      & > a {
+        font-size: 18px;
+        font-weight: 600;
+        padding: 20px 0;
+      }
+
+      & > ul {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid #4c4c4c29;
+
+        & li {
+          display: flex;
+
+          & a {
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+.menu-open {
+  .burger-menu .menu__body {
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+  }
+}
 @media (hover: hover) and (min-width: $tablet) {
   a,
   button {

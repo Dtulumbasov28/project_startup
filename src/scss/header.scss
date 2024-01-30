@@ -5,6 +5,10 @@
   width: 100%;
   top: 0;
   padding: 20px 0;
+
+  @media (max-width: $mobileBig) {
+    padding: 10px 0;
+  }
   // .header__container
 
   &__container {
@@ -21,12 +25,33 @@
 
   &__logo {
     max-width: 250px;
-    margin: 0 70px 0 0;
+    margin: 0 auto 0 0;
+
+    @media (max-width: $laptop) {
+      max-width: 180px;
+    }
+
+    @media (max-width: $tablet) {
+      margin: 0 auto 0 20px;
+    }
+
+    @media (max-width: $mobile) {
+      flex: 0 0 60px;
+      overflow: hidden;
+      height: 54px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      margin: 0 auto 0 10px;
+    }
 
     & img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
+
+      @media (max-width: $mobile) {
+        width: unset;
+      }
     }
   }
 
@@ -38,77 +63,66 @@
   // .header__socials
 
   &__socials {
-
+    @media (max-width: $netbook) {
+      display: none;
+    }
   }
 
   // .header__socials-item
 
   &__socials-item {
- 
   }
-
 
   // .header__contacts
 
   &__contacts {
+    @media (max-width: $tablet) {
+      display: flex;
+      align-items: center;
+    }
+    @media (max-width: $mobileBig) {
+      display: flex;
+      flex-direction: column;
+      align-items: unset;
+    }
   }
 
   // .header__contacts-numbers
 
   &__contacts-numbers {
-  
+    @media (max-width: $mobileBig) {
+      margin: 0;
+      gap: 6px;
+    }
   }
 
   // .header__contacts-wh
 
   &__contacts-wh {
-
   }
 
   // .header__contacts-tel
 
   &__contacts-tel {
-
   }
 
   // .header__contacts-call
 
   &__contacts-call {
- 
+    @media (max-width: $mobileBig) {
+      width: 100%;
+      margin: 2px 0 0 auto;
+      text-align: right;
+      & span {
+        display: none;
+      }
+    }
   }
 
   // .header__contacts-text
 
   &__contacts-text {
- 
-  }
-}
-.menu {
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 0 auto 0 0;
-
-  // .menu__body
-
-  &__body {
-  }
-
-  // .menu__list
-
-  &__list {
-    display: flex;
-  }
-
-  // .menu__item
-
-  &__item {
-    & > a {
-      padding: 10px 25px;
-      white-space: nowrap;
-    }
-
-    & > ul {
+    @media (max-width: $mobileBig) {
       display: none;
     }
   }
@@ -117,52 +131,50 @@
 //====================================================================================================
 
 //Burger
-/*
 .icon-menu {
-	display: none;
-	@media (max-width: $mobile) {
-		display: block;
-		position: relative;
-		width: rem(30);
-		height: rem(18);
-		cursor: pointer;
-		z-index: 5;
-		span,
-		&::before,
-		&::after {
-			content: "";
-			transition: all 0.3s ease 0s;
-			right: 0;
-			position: absolute;
-			width: 100%;
-			height: rem(2);
-			background-color: #000;
-		}
-		&::before {
-			top: 0;
-		}
-		&::after {
-			bottom: 0;
-		}
-		span {
-			top: calc(50% - rem(1));
-		}
-		.menu-open & {
-			span {
-				width: 0;
-			}
-			&::before,
-			&::after {
-			}
-			&::before {
-				top: calc(50% - rem(1));
-				transform: rotate(-45deg);
-			}
-			&::after {
-				bottom: calc(50% - rem(1));
-				transform: rotate(45deg);
-			}
-		}
-	}
+  display: none;
+  @media (max-width: $tablet) {
+    display: block;
+    position: relative;
+    width: rem(20);
+    height: rem(16);
+    cursor: pointer;
+    z-index: 5;
+    span,
+    &::before,
+    &::after {
+      content: "";
+      transition: all 0.3s ease 0s;
+      right: 0;
+      position: absolute;
+      width: 100%;
+      height: rem(2);
+      background-color: #000;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    span {
+      top: calc(50% - rem(1));
+    }
+    .menu-open & {
+      span {
+        width: 0;
+      }
+      &::before,
+      &::after {
+      }
+      &::before {
+        top: calc(50% - rem(1));
+        transform: rotate(-45deg);
+      }
+      &::after {
+        bottom: calc(50% - rem(1));
+        transform: rotate(45deg);
+      }
+    }
+  }
 }
-*/

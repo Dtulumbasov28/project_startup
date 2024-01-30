@@ -1,5 +1,13 @@
 .main {
   padding: 160px 0 150px 0;
+
+  @media (max-width: $laptop) {
+    padding: 160px 0 30px 0;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 120px 0 30px 0;
+  }
   // background: url("@img/main/main-bc-gradient.svg");
   // background-repeat: no-repeat;
   // background-size: cover;
@@ -44,6 +52,10 @@
       position: absolute;
       bottom: -150px;
       left: 160px;
+
+      @media (max-width: $laptop) {
+        content: unset;
+      }
     }
 
     &::after {
@@ -61,6 +73,10 @@
       position: absolute;
       bottom: -170px;
       right: 0;
+
+      @media (max-width: $laptop) {
+        content: unset;
+      }
     }
   }
 
@@ -72,8 +88,24 @@
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
+    font-size: 60px;
     text-align: center;
     margin: 0 0 44px 0;
+
+    @media (max-width: $laptop) {
+      line-height: 1.2;
+      margin: 0 0 30px 0;
+    }
+    @media (max-width: $tablet) {
+      font-size: 50px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 38px;
+    }
+    @media (max-width: $mobileBig) {
+      font-size: 26px;
+      margin: 0 0 20px 0;
+    }
 
     & span {
       font-size: 80px;
@@ -82,6 +114,11 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 8px;
+
+      @media (max-width: $laptop) {
+        font-size: inherit;
+        margin-bottom: unset;
+      }
     }
   }
 
@@ -92,6 +129,14 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @media (max-width: $laptop) {
+      position: relative;
+      margin: 0 0 30px 0;
+    }
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
 
   // .main__item
@@ -101,14 +146,34 @@
     &:first-child {
       margin: 0 80px 0 0;
       transform: translateY(-36px);
+
+      @media (max-width: $laptop) {
+        margin: unset;
+        transform: unset;
+      }
     }
     &:nth-child(2) {
       margin: 150px 0 0 0;
       transform: translateY(-150px);
+
+      @media (max-width: $laptop) {
+        margin: 0 20px;
+        transform: unset;
+      }
+
+      @media (max-width: $tablet) {
+        margin: 0 15px;
+        transform: unset;
+      }
     }
     &:last-child {
       margin: 0 0 0 auto;
       transform: translate(-40px, -150px);
+
+      @media (max-width: $laptop) {
+        margin: unset;
+        transform: unset;
+      }
     }
   }
 
@@ -117,11 +182,21 @@
   &__item-img {
     max-width: 380px;
     max-height: 230px;
+    height: 100%;
     overflow: hidden;
     border-radius: 150px;
     border: 10px solid #fff;
     box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.11);
     margin: 0 0 10px 0;
+
+    @media (max-width: $netbook) {
+      max-height: 200px;
+    }
+
+    @media (max-width: $tablet) {
+      max-height: 150px;
+      border: 7px solid #fff;
+    }
 
     & img {
       width: 100%;
@@ -148,6 +223,18 @@
     align-items: center;
     margin: 220px 0 0 auto;
     max-width: 645px;
+
+    @media (max-width: $laptop) {
+      text-align: center;
+      margin: unset;
+      max-width: unset;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+    }
+    @media (max-width: $mobileBig) {
+      grid-template-columns: unset;
+      grid-template-rows: repeat(1, auto);
+    }
   }
 
   // .main__desc
@@ -159,13 +246,30 @@
     line-height: 1.4;
     margin: 0 0 15px 0;
     grid-area: 1 / 1 / 2 / 3;
+
+    @media (max-width: $mobileBig) {
+      font-size: 20px;
+      grid-area: unset;
+    }
   }
 
   // .main__button
 
   &__button {
     grid-area: 2 / 1 / 3 / 2;
-    margin: 0 30px 0 0;
+
+    @media (max-width: $laptop) {
+      margin: 0 20px 0 auto;
+    }
+
+    @media (max-width: $mobileBig) {
+      grid-area: unset;
+      margin: 0 auto 15px auto;
+    }
+
+    @media (max-width: $mobileSmall) {
+      width: 100%;
+    }
   }
 
   // .main__button-desc
@@ -180,6 +284,12 @@
     align-items: center;
     width: 100%;
     grid-area: 2 / 2 / 3 / 3;
+
+    @media (max-width: $mobileBig) {
+      font-size: 20px;
+      grid-area: unset;
+      justify-content: center;
+    }
 
     &::before {
       content: "";
