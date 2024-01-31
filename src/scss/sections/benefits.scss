@@ -47,6 +47,10 @@
   &__items {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $netbook) {
+      flex-direction: column;
+    }
   }
 
   // .benefits__items-top
@@ -131,10 +135,16 @@
       background: url("@img/benefits/benefits_bg.svg") center center no-repeat;
       background-size: contain;
       position: absolute;
-      bottom: 70px;
+      bottom: 0;
       left: -10px;
       width: calc(100% + 20px);
       height: 100%;
+
+      @media (max-width: $pc) {
+        left: 0;
+        width: 100vw;
+        background-size: auto;
+      }
     }
   }
   // .benefits__item
@@ -142,9 +152,22 @@
   &__item {
     position: relative;
     max-width: calc(680px + 80px);
+    width: 100%;
     padding: 0 0 0 80px;
 
+    @media (max-width: $netbook) {
+      max-width: 100%;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 60px 0 0 0;
+    }
+
     &:nth-child(2) {
+      @media (max-width: $netbook) {
+        margin-top: 30px;
+      }
+
       &::before {
         background: url("@img/benefits/benefits_2.svg") center center no-repeat;
         background-size: contain;
@@ -165,6 +188,16 @@
       height: 370px;
       margin: 20px 0;
       padding: unset;
+
+      @media (max-width: $pc) {
+        max-width: 1115px;
+        margin: 20px auto;
+        height: 320px;
+      }
+
+      @media (max-width: $laptop) {
+        height: 600px;
+      }
     }
 
     &:nth-child(4) {
@@ -215,6 +248,15 @@
       width: 210px;
       height: 210px;
       border: 10px solid #c7a7d9;
+
+      @media (max-width: $pc) {
+        width: 190px;
+        height: 190px;
+        left: 0;
+      }
+      @media (max-width: $laptop) {
+        top: 0;
+      }
     }
 
     &:nth-child(2) {
@@ -224,6 +266,16 @@
       width: 270px;
       height: 270px;
       border: 10px solid #ff9440;
+
+      @media (max-width: $pc) {
+        width: 220px;
+        height: 220px;
+        left: 160px;
+      }
+
+      @media (max-width: $laptop) {
+        top: 0;
+      }
     }
 
     &:nth-child(3) {
@@ -233,6 +285,14 @@
       width: 180px;
       height: 180px;
       border: 10px solid #b14f78;
+
+      @media (max-width: $pc) {
+        left: 345px;
+      }
+
+      @media (max-width: $laptop) {
+        top: 0;
+      }
     }
 
     &:nth-child(4) {
@@ -242,6 +302,12 @@
       width: 290px;
       height: 290px;
       border: 10px solid #b802c4;
+
+      @media (max-width: $pc) {
+        width: 210px;
+        height: 210px;
+        left: 430px;
+      }
     }
 
     &:nth-child(5) {
@@ -251,6 +317,17 @@
       width: 240px;
       height: 240px;
       border: 10px solid #72cc80;
+
+      @media (max-width: $pc) {
+        width: 200px;
+        height: 200px;
+        left: 590px;
+      }
+
+      @media (max-width: $laptop) {
+        top: 150px;
+        left: 50px;
+      }
     }
 
     &:nth-child(6) {
@@ -260,6 +337,17 @@
       width: 270px;
       height: 270px;
       border: 10px solid #88d9e8;
+
+      @media (max-width: $pc) {
+        width: 210px;
+        height: 210px;
+        left: 760px;
+      }
+
+      @media (max-width: $laptop) {
+        top: 175px;
+        left: 225px;
+      }
     }
 
     &:nth-child(7) {
@@ -269,6 +357,17 @@
       width: 240px;
       height: 240px;
       border: 10px solid #ffda83;
+
+      @media (max-width: $pc) {
+        width: 190px;
+        height: 190px;
+        left: 925px;
+      }
+
+      @media (max-width: $laptop) {
+        top: 175px;
+        left: 225px;
+      }
     }
   }
 
@@ -278,6 +377,12 @@
     display: flex;
     justify-content: center;
     margin: 40px 0 0 0;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 0 0 0;
+    }
   }
 
   // .benefits__button
@@ -285,6 +390,10 @@
   &__button {
     &:first-child {
       margin: 0 30px 0 0;
+
+      @media (max-width: $mobile) {
+        margin: 0 0 10px 0;
+      }
     }
   }
   // .benefits__slogan
@@ -294,10 +403,12 @@
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-    background: linear-gradient(90deg, #b700c7 0%, #de3e63 46%, #ff9440 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    line-height: normal;
     margin: 30px 0 0 0;
+
+    @media (max-width: $mobile) {
+      font-size: 26px;
+      margin: 20px 0 0 0;
+    }
   }
 }

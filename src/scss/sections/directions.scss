@@ -1,6 +1,11 @@
 .directions {
   position: relative;
   padding: 60px 0 95px 0;
+
+  @media (max-width: $mobileBig) {
+    padding: 60px 0 70px 0;
+  }
+
   // background: #fff;
 
   // &::before {
@@ -30,30 +35,64 @@
     height: 35px;
   }
 
+  // .directions__container
+
   &__container {
-	position: relative;
+    position: relative;
     z-index: 20;
   }
 
+  // .directions__title
+
   &__title {
     margin-bottom: 15px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 10px;
+    }
   }
+
+  // .directions__desc
 
   &__desc {
     max-width: 770px;
     margin: 0 auto 50px auto;
+
+    @media (max-width: $mobile) {
+      margin: 0 auto 30px auto;
+    }
   }
+
+  // .directions__list
 
   &__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     margin: -20px;
+
+    @media (max-width: $mobileBig) {
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      margin: unset;
+    }
   }
+
+  // .directions__item
 
   &__item {
     position: relative;
     max-width: 280px;
     margin: 20px;
+
+    @media (max-width: $mobileBig) {
+      margin: unset;
+      max-width: unset;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
 
     & svg {
       position: absolute;
@@ -64,6 +103,8 @@
     }
   }
 
+  // .directions__item-img
+
   &__item-img {
     height: 180px;
 
@@ -71,12 +112,22 @@
     overflow: hidden;
     margin: 0 0 10px 0;
 
+    @media (max-width: $mobileBig) {
+      height: 220px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      height: 180px;
+    }
+
     & img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
+
+  // .directions__item-schedule
 
   &__item-schedule {
     font-size: 13px;
@@ -97,6 +148,8 @@
       }
     }
   }
+
+  // .directions__item-heading
 
   &__item-heading {
     font-size: 16px;
