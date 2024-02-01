@@ -2,8 +2,9 @@
   position: relative;
   padding: 60px 0 95px 0;
 
-  @media (max-width: $mobileBig) {
-    padding: 60px 0 70px 0;
+  @media (max-width: $mobile) {
+    padding: 40px 0 85px 0;
+    border-radius: 50px 50px 0 0;
   }
 
   // background: #fff;

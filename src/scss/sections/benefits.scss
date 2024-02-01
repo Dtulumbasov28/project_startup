@@ -2,6 +2,11 @@
   position: relative;
   padding: 60px 0 80px 0;
 
+  @media (max-width: $mobile) {
+    padding: 50px 0;
+    border-radius: 0 0 50px 50px;
+  }
+
   // &::after {
   //   content: "";
   //   background: url("@img/icons/-backgraund-section.svg");
@@ -145,6 +150,26 @@
         width: 100vw;
         background-size: auto;
       }
+
+      @media (max-width: $tablet) {
+        background: url("@img/benefits/benefits_bg-2.svg") center center
+          no-repeat;
+        background-size: contain;
+      }
+
+      @media (max-width: $mobile) {
+        background: url("@img/benefits/benefits_bg-3.svg") center center
+          no-repeat;
+        background-size: contain;
+        width: 100%;
+        left: 0;
+      }
+
+      @media (max-width: $mobileSmall) {
+        background: url("@img/benefits/benefits_bg-3.svg") center center
+          no-repeat;
+        background-size: cover;
+      }
     }
   }
   // .benefits__item
@@ -177,11 +202,6 @@
     // .benefits__item_horizontal
 
     &_horizontal {
-      font-family: $fontFamilySecond;
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 1.2;
-      text-align: center;
       display: flex;
       align-items: center;
       max-width: 100%;
@@ -196,7 +216,18 @@
       }
 
       @media (max-width: $laptop) {
-        height: 600px;
+        height: 278px;
+        max-width: 868px;
+      }
+
+      @media (max-width: $tablet) {
+        height: 649px;
+        max-width: 354px;
+      }
+
+      @media (max-width: $mobileSmall) {
+        height: 720px;
+        max-width: 290px;
       }
     }
 
@@ -231,6 +262,11 @@
   // .benefits__item-elem
 
   &__item-elem {
+    font-family: $fontFamilySecond;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
     position: absolute;
     display: flex;
     align-items: center;
@@ -238,8 +274,16 @@
     flex-shrink: 0;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.83);
-    backdrop-filter: blur(1.5px);
+    backdrop-filter: blur(3px);
     padding: 10px;
+
+    @media (max-width: $laptop) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 24px;
+    }
 
     &:nth-child(1) {
       z-index: 3;
@@ -255,6 +299,10 @@
         left: 0;
       }
       @media (max-width: $laptop) {
+        top: 90px;
+      }
+
+      @media (max-width: $tablet) {
         top: 0;
       }
     }
@@ -275,6 +323,16 @@
 
       @media (max-width: $laptop) {
         top: 0;
+        left: 145px;
+      }
+      @media (max-width: $tablet) {
+        top: 66px;
+        left: 134px;
+      }
+      @media (max-width: $mobileSmall) {
+        top: 110px;
+        left: unset;
+        right: 0;
       }
     }
 
@@ -291,7 +349,16 @@
       }
 
       @media (max-width: $laptop) {
-        top: 0;
+        top: 60px;
+        left: 334px;
+      }
+      @media (max-width: $tablet) {
+        top: 211px;
+        left: 44px;
+      }
+      @media (max-width: $mobileSmall) {
+        top: 266px;
+        left: 0;
       }
     }
 
@@ -307,6 +374,10 @@
         width: 210px;
         height: 210px;
         left: 430px;
+      }
+
+      @media (max-width: $laptop) {
+        display: none;
       }
     }
 
@@ -325,8 +396,19 @@
       }
 
       @media (max-width: $laptop) {
-        top: 150px;
-        left: 50px;
+        top: 10px;
+        left: 481px;
+      }
+
+      @media (max-width: $tablet) {
+        top: 375px;
+        left: 150px;
+        z-index: 0;
+      }
+
+      @media (max-width: $mobileSmall) {
+        left: unset;
+        right: 0;
       }
     }
 
@@ -345,8 +427,13 @@
       }
 
       @media (max-width: $laptop) {
-        top: 175px;
-        left: 225px;
+        top: 48px;
+        left: 659px;
+      }
+
+      @media (max-width: $tablet) {
+        top: 510px;
+        left: 0;
       }
     }
 
@@ -365,8 +452,7 @@
       }
 
       @media (max-width: $laptop) {
-        top: 175px;
-        left: 225px;
+        display: none;
       }
     }
   }
@@ -388,6 +474,10 @@
   // .benefits__button
 
   &__button {
+    @media (max-width: $mobileSmall) {
+      width: 100%;
+      text-align: center;
+    }
     &:first-child {
       margin: 0 30px 0 0;
 

@@ -60,6 +60,7 @@ section {
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
+  text-align: center;
   white-space: nowrap;
   width: fit-content;
   padding: 18px 40px;
@@ -76,6 +77,7 @@ section {
 
   &__outline {
     color: $colorPink;
+    text-align: center;
     border: 1px solid$colorPink;
   }
 }
