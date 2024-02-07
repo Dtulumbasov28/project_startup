@@ -223,7 +223,9 @@
     align-items: center;
     margin: 220px 0 0 auto;
     max-width: 645px;
-
+    @media (max-width: $pc) {
+      margin: 300px 0 0 auto;
+    }
     @media (max-width: $laptop) {
       text-align: center;
       margin: unset;

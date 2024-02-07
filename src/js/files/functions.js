@@ -421,6 +421,14 @@ export function menuInit() {
 			}
 		});
 	};
+	if (document.querySelector(".menu__close")) {
+		document.addEventListener("click", function (e) {
+			if (bodyLockStatus && e.target.closest('.menu__close')) {
+				bodyLockToggle();
+				document.documentElement.classList.toggle("menu-open");
+			}
+		});
+	};
 }
 export function menuOpen() {
 	bodyLock();

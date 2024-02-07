@@ -139,7 +139,8 @@
     width: rem(20);
     height: rem(16);
     cursor: pointer;
-    z-index: 5;
+
+    
     span,
     &::before,
     &::after {
@@ -151,26 +152,29 @@
       height: rem(2);
       background-color: #000;
     }
+
     &::before {
       top: 0;
     }
+
     &::after {
       bottom: 0;
     }
+
     span {
       top: calc(50% - rem(1));
     }
+
     .menu-open & {
       span {
         width: 0;
       }
-      &::before,
-      &::after {
-      }
+
       &::before {
         top: calc(50% - rem(1));
         transform: rotate(-45deg);
       }
+
       &::after {
         bottom: calc(50% - rem(1));
         transform: rotate(45deg);

@@ -1,10 +1,14 @@
 .directions {
   position: relative;
   padding: 60px 0 95px 0;
+  background-color: #fff;
 
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
     padding: 40px 0 85px 0;
     border-radius: 50px 50px 0 0;
+    -webkit-box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.05);
   }
 
   // background: #fff;

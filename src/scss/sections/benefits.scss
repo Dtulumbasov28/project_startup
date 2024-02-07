@@ -1,10 +1,14 @@
 .benefits {
   position: relative;
   padding: 60px 0 80px 0;
+  background-color: #fff;
 
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
     padding: 50px 0;
     border-radius: 0 0 50px 50px;
+    -webkit-box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.05);
   }
 
   // &::after {
@@ -166,7 +170,7 @@
       }
 
       @media (max-width: $mobileSmall) {
-        background: url("@img/benefits/benefits_bg-3.svg") center center
+        background: url("@img/benefits/benefits_bg-3.svg") 50% 100%
           no-repeat;
         background-size: cover;
       }
