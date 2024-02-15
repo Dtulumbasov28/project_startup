@@ -279,38 +279,26 @@ section {
     font-size: 13px;
   }
 
-  // .menu__body
+  & nav > ul {
+    display: flex;
 
-  &__body {
+    & > li {
+      display: flex;
+      & > a {
+        padding: 10px 25px;
+        white-space: nowrap;
+
+        @media (max-width: $laptop) {
+          padding: 10px 15px;
+        }
+      }
+    }
   }
 
   // .menu__close
 
   &__close {
     display: none;
-  }
-
-  // .menu__list
-
-  &__list {
-    display: flex;
-  }
-
-  // .menu__item
-
-  &__item {
-    & > a {
-      padding: 10px 25px;
-      white-space: nowrap;
-
-      @media (max-width: $laptop) {
-        padding: 10px 15px;
-      }
-    }
-
-    & > ul {
-      display: none;
-    }
   }
 }
 .burger-menu {
@@ -324,11 +312,6 @@ section {
     padding: 20px;
   }
   & .menu {
-    // .menu__body
-
-    &__body {
-    }
-
     // .menu__list
 
     &__list {
@@ -419,7 +402,8 @@ section {
     transition: 0.2s ease;
   }
 
-  .menu__item > a,
+  .header__menu > nav > ul > li > a,
+  .header__menu > nav > ul > li.expanded > ul > li > a,
   .header__socials-item,
   .header__contacts-tel {
     &:hover {
